@@ -1,0 +1,9 @@
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\bin\Debug\Currency Converter GUI.exe.config
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency Converter GUI.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Properties.Resources.resources
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency Converter GUI.csproj.GenerateResource.Cache
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\bin\Debug\Currency Converter GUI.exe
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\bin\Debug\Currency Converter GUI.pdb
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency Converter GUI.exe
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency Converter GUI.pdb
+C:\Users\Matt\Dropbox\Google Drive\School\University\2017\Semester 1\CAB201\Assignment 3\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Form1.resources
