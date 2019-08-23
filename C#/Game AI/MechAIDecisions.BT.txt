@@ -1,0 +1,101 @@
+tree("Root")
+	repeat
+		mute
+			fallback
+				UpdateMind()
+				tree "Pursuing"
+				tree "Fleeing"
+				tree "Attacking"
+				tree "Roaming"
+
+tree ("Pursuing")
+	while
+		sequence
+			HasAttackTarget()
+			not TargetLOS()
+			not StatusCheck()
+			not EnemyTooClose()
+		parallel
+			fallback
+				while not PickupWorthwhile()
+					TakePickup()
+				mute Pursue()
+
+tree ("Attacking")
+	while
+		sequence
+			HasAttackTarget()
+			TargetLOS()
+			not StatusCheck()
+		sequence
+			fallback				
+				while
+					not BeingTargeted()						
+					parallel
+						while PickupWorthwhile()
+							TakePickup()
+						mute Attack()
+						mute
+							while CheckLasers()
+								Lasers()
+				parallel
+					mute Attack()
+					sequence
+						fallback 
+							while PickupWorthwhile()
+								TakePickup()
+							GuardPickup()
+							mute AttackMove()
+							
+					tree "Weapons"
+
+tree ("Fleeing")
+	while 
+		fallback
+			StatusCheck()
+			MultipleAggressors()
+			EnemyTooClose()
+		fallback
+			Flee()
+			tree "Weapons"
+
+// Explore the map, and get pickups if needed
+tree ("Roaming")
+	fallback
+		while not HasAttackTarget()
+			sequence
+				fallback 
+					while PickupWorthwhile()
+						TakePickup()				
+					Roam()
+
+
+// Fire all possible weapons, and continue scanning for targets
+tree ("Weapons")
+	repeat
+		fallback
+			not 
+				mute
+					while CheckLasers()
+						Lasers()
+			not 
+				mute 
+					while CheckCannons()
+						Cannons()
+			not 
+				mute
+					tree "Beam"
+			not 
+				mute 
+					while CheckMissiles()
+						Missiles()
+
+
+// Manage Firing the beam
+tree ("Beam")
+	fallback // Check if beam should be on or off
+		while CheckBeam()
+			Beam()
+		sequence 
+			not CheckBeam()
+			BeamOff()
